@@ -16,10 +16,11 @@ public class EventsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_events);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //comment
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        // comment
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
