@@ -19,6 +19,7 @@ public class EventsActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        // comment
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
