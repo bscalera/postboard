@@ -5,9 +5,11 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.ViewGroup;
 
 public class EventsActivity extends AppCompatActivity {
 
@@ -19,6 +21,18 @@ public class EventsActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbar);
+
+
+        ViewGroup inclusionViewGroup = (ViewGroup) findViewById(R.id.inclusionLayout);
+
+        View event1 = LayoutInflater.from(this).inflate(R.layout.event_object_layout, null);
+        View event2 = LayoutInflater.from(this).inflate(R.layout.event_object_layout, null);
+        View event3 = LayoutInflater.from(this).inflate(R.layout.event_object_layout, null);
+
+        inclusionViewGroup.addView(event1);
+        inclusionViewGroup.addView(event2);
+        inclusionViewGroup.addView(event3);
+
 /*
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 
