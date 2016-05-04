@@ -68,7 +68,46 @@
                 android:text="Event duration time"
                 android:textAppearance="?android:textAppearanceSmall" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="food or drinks that will be at the event"
+                android:textAppearance="?android:textAppearanceSmall" />
 
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#33cc33"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/downvote_symbol" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="number of downvotes"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upvote_symbol" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="number of upvotes"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
     <!--comment-->
