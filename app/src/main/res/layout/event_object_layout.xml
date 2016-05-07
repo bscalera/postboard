@@ -23,6 +23,7 @@
             android:layout_margin="16dp"
             android:background="#009688"
             android:layout_gravity="center"
+            android:id="@+id/eventImage"
             android:src="@mipmap/ic_launcher" />
 
         <LinearLayout
@@ -38,42 +39,49 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Event title"
+                android:id="@+id/eventTitle"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Event day"
+                android:id="@+id/eventDay"
                 android:textAppearance="?android:textAppearanceSmall" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Event time"
+                android:id="@+id/eventTime"
                 android:textAppearance="?android:textAppearanceSmall" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Event place"
+                android:id="@+id/eventPlace"
                 android:textAppearance="?android:textAppearanceSmall" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Event organizer"
+                android:id="@+id/eventOrganizer"
                 android:textAppearance="?android:textAppearanceSmall" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Event duration time"
+                android:id="@+id/eventDuration"
                 android:textAppearance="?android:textAppearanceSmall" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="food or drinks that will be at the event"
+                android:id="@+id/eventFood"
                 android:textAppearance="?android:textAppearanceSmall" />
 
             <LinearLayout
@@ -87,6 +95,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
+                    android:id="@+id/downvoteButton"
                     android:text="@string/downvote_symbol" />
 
                 <TextView
@@ -94,12 +103,14 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:text="number of downvotes"
+                    android:id="@+id/downvoteNumber"
                     android:textAppearance="?android:textAppearanceSmall" />
 
                 <Button
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
+                    android:id="@+id/upvoteButton"
                     android:text="@string/upvote_symbol" />
 
                 <TextView
@@ -107,6 +118,7 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:text="number of upvotes"
+                    android:id="@+id/upvoteNumber"
                     android:textAppearance="?android:textAppearanceSmall" />
 
             </LinearLayout>

@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 public class EventsActivity extends AppCompatActivity {
 
@@ -23,6 +24,7 @@ public class EventsActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
+        //http://stackoverflow.com/questions/16022615/how-to-load-programmatically-a-layout-xml-file-in-android
         ViewGroup inclusionViewGroup = (ViewGroup) findViewById(R.id.inclusionLayout);
 
         View event1 = LayoutInflater.from(this).inflate(R.layout.event_object_layout, null);
@@ -32,6 +34,9 @@ public class EventsActivity extends AppCompatActivity {
         inclusionViewGroup.addView(event1);
         inclusionViewGroup.addView(event2);
         inclusionViewGroup.addView(event3);
+
+        TextView title1 = (TextView) findViewById(R.id.eventTitle);
+        title1.setText("Test this");
 
 /*
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
