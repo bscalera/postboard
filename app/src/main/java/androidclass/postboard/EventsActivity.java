@@ -1,5 +1,6 @@
 package androidclass.postboard;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class EventsActivity extends AppCompatActivity {
@@ -38,6 +40,8 @@ public class EventsActivity extends AppCompatActivity {
         TextView title1 = (TextView) findViewById(R.id.eventTitle);
         title1.setText("Test this");
 
+        Button uploadButton = (Button) findViewById(R.id.uploadButton);
+
 /*
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 
@@ -49,6 +53,12 @@ public class EventsActivity extends AppCompatActivity {
             }
         });
         */
+    }
+
+    public void upload(View view)
+    {
+        Intent intent = new Intent(EventsActivity.this, UploadActivity.class);
+        startActivity(intent);
     }
 
     @Override

@@ -24,7 +24,9 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:text="upload"
-                android:id="@+id/uploadButton" />
+                android:id="@+id/uploadButton"
+                android:onClick="upload"
+                />
 
             <Button
                 android:layout_width="0dp"
